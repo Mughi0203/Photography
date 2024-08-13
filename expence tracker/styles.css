@@ -1,0 +1,139 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app-container {
+    width: 90%;
+    max-width: 800px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #e94e77;
+    font-size: 2.5rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.form-container input,
+.form-container select {
+    padding: 12px;
+    border: 2px solid #e94e77;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    padding: 12px;
+    background: #e94e77;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.form-container button:hover {
+    background: #d73a5a;
+}
+
+
+.summary-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.summary-container h2 {
+    color: #333;
+}
+
+.summary-container #totalExpenses,
+.summary-container #remainingBudget {
+    font-size: 1.2rem;
+    margin: 12px 0;
+    color: #555;
+}
+
+.summary-container input {
+    margin-top: 10px;
+}
+
+
+.expense-list-container {
+    margin-top: 20px;
+}
+
+.expense-list-container h2 {
+    color: #333;
+}
+
+.expense-list-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.expense-list-container li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.expense-list-container li span {
+    font-size: 1rem;
+    color: #333;
+}
+
+.expense-list-container li button {
+    background: #f44336;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.expense-list-container li button:hover {
+    background: #d32f2f;
+}
+
+
+@media (max-width: 600px) {
+    .form-container,
+    .summary-container,
+    .expense-list-container {
+        width: 100%;
+    }
+}
