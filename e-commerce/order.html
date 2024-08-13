@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - My E-Commerce Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .order-page {
+            padding: 50px 0;
+            background: linear-gradient(to right, #f9f9f9, #e4e9f2);
+        }
+
+        .order-page h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 36px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .order-summary, .shipping-details {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .order-summary h3, .shipping-details h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .order-summary table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .order-summary table th, .order-summary table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .order-summary table th {
+            background-color: #f4f4f4;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .order-page .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #1e90ff;
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .order-page .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">My Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="order-page">
+        <div class="container">
+            <h2>Order Summary</h2>
+
+
+            <div class="order-summary">
+                <h3>Order Details</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Product 1</td>
+                            <td>1</td>
+                            <td>$29.99</td>
+                            <td>$29.99</td>
+                        </tr>
+                        <tr>
+                            <td>Product 2</td>
+                            <td>2</td>
+                            <td>$39.99</td>
+                            <td>$79.98</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="3">Subtotal</th>
+                            <td>$109.97</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Shipping</th>
+                            <td>$5.99</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Total</th>
+                            <td>$115.96</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="shipping-details">
+                <h3>Shipping Details</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="state">State:</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="zip">Zip Code:</label>
+                        <input type="text" id="zip" name="zip" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">Country:</label>
+                        <input type="text" id="country" name="country" required>
+                    </div>
+
+                    <button type="submit" class="btn">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My E-Commerce Site. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
